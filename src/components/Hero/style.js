@@ -1,5 +1,3 @@
-import { display, margin, maxWidth, padding, width } from "@mui/system";
-
 const style = {
   hero: (theme) => ({
     padding: "20px",

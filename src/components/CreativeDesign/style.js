@@ -1,5 +1,3 @@
-import CreativeDesign from "./CreativeDesign";
-
 const style = {
   CreativeDesign: (theme) => ({
     padding: " 60px 20px 88px",
