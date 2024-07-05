@@ -1,16 +1,14 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import TextField from "@mui/material/TextField";
-import TextareaAutosize from "@mui/material/TextareaAutosize";
-import Button from "@mui/material/Button";
 
 //SVG ICONS AND IMAGES
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+
 import photo_send from "../../assets/img/photo_send_2.png";
 
 import style from "./style";
+import FormComponent from "./FormComponent";
 
 function ContactUs() {
   return (
@@ -40,18 +38,7 @@ function ContactUs() {
             </Box>
           </Box>
 
-          <Box sx={style.input}>
-            <TextField placeholder="Full name" sx={style.textField} />
-            <TextField placeholder="Email address" sx={style.textField} />
-          </Box>
-          <TextareaAutosize
-            minRows={6}
-            placeholder="write message"
-            style={style.textareaAutosize}
-          />
-          <Button variant="contained" color="primary">
-            send us message <ArrowForwardIosIcon />
-          </Button>
+          <FormComponent />
         </Box>
         <Box>
           <Box component="img" src={photo_send} sx={style.photo} />

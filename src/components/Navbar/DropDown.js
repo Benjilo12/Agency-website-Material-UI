@@ -51,9 +51,11 @@ export default function BasicMenu({ page }) {
           "aria-labelledby": "basic-button",
         }}
       >
-        <MenuItem onClick={handleClose}>Profile</MenuItem>
-        <MenuItem onClick={handleClose}>My account</MenuItem>
-        <MenuItem onClick={handleClose}>Logout</MenuItem>
+        <MenuItem onClick={handleClose}>blog 1</MenuItem>
+        <MenuItem onClick={handleClose}>blog 2</MenuItem>
+        <MenuItem sx={{ fontSize: "7px" }} onClick={handleClose}>
+          blog 3
+        </MenuItem>
       </Menu>
     </div>
   );

@@ -5,7 +5,7 @@ const style = {
     [theme.breakpoints.up("lg")]: {
       display: "flex",
       justifyContent: "center",
-      padding: "200px 20px 190px",
+      padding: "50x 20px ",
     },
   }),
   wrapper: (theme) => ({
@@ -68,13 +68,14 @@ const style = {
       gap: "20px",
     },
   }),
-  textField: {
+  textField: (theme) => ({
     width: "300px",
     "& input::placeholder": {
       fontSize: "20px",
       lineHeight: "20px",
     },
-  },
+    [theme.breakpoints.up("xs")]: { width: "100%" },
+  }),
   photo: {
     width: "100%",
     margin: "44px auto 0",
